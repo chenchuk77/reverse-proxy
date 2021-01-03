@@ -1,5 +1,8 @@
 #!/bin/bash
 
+docker stop apacheserver || true
+docker rm apacheserver || true
+
 echo "starting reverse proxy [TCP/90] in the background ..."
 docker run -d --rm \
        --name apacheserver \
