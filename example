@@ -1,0 +1,11 @@
+
+URL PPGetProducts:  https://sbppi-nova-lumos.cs89.force.com/api/services/apexrest/PPGetProducts/
+URL PPnotification: https://sbppi-nova-lumos.cs89.force.com/api/services/apexrest/PPnotification/
+
+## TEST GetProduct ##
+curl -X POST \
+     -d @example.data \
+     -H "Content-Type: application/json" \
+     https://sbppi-nova-lumos.cs89.force.com/api/services/apexrest/PPGetProducts
+
+
