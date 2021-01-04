@@ -1,0 +1,8 @@
+  255  openssl genrsa -des3 -passout pass:x -out s
+  256  openssl rsa -passin pass:x -in server.pass.
+  257  rm server.pass.key
+  258  openssl req -new -key server.key -out serve
+  259  echo $?
+  260  ls -lstr
+  261  openssl x509 -req -sha256 -days 365 -in ser
+  262  ls -lstr
