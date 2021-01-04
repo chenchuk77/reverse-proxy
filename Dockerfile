@@ -10,4 +10,5 @@ COPY server.crt /usr/local/apache2/conf/server.crt
 RUN mkdir -p /usr/local/apache2/conf/sites/
 
 EXPOSE 80
+EXPOSE 443
 CMD ["httpd", "-D", "FOREGROUND"]
