@@ -18,4 +18,9 @@ curl -X POST \
      -H "Content-Type: application/json" \
      http://52.16.47.21:90/PPapi/PPGetProducts
 
-
+## TEST SSL with self signed certificate
+curl --insecure \
+     -X POST \
+     -d @example.data \
+     -H "Content-Type: application/json" \
+     https://52.16.47.21:993/PPapi/PPGetProducts
