@@ -1,0 +1,25 @@
+
+
+
+1. edit config
+  $ vim apacheconf/sites/techolaf.conf 
+
+2. build docker image
+  $ ./rebuild.sh 
+
+3. replace container
+  $ ./start.sh 
+
+4. logs:
+  $ docker exec -ti apacheserver /bin/bash
+    $ logs
+
+
+
+
+# for debug, change cmd in dockerfile
+#4. login and start httpd ( TEMP - AUTO START IN DOCKER FILE )
+#  $ docker exec -ti apacheserver /bin/bash
+#    $ httpd
+#    $ logs
+#
